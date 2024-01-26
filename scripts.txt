@@ -1,0 +1,7 @@
+./githubapi-get.sh $GITHUBTOKEN /users/<username>/repos | grep -i -E '"name": | "created_at":'
+
+- This script lists the name and creation date of every repo in the users list of GitHub repos
+
+./githubapi-get.sh $GITHUBTOKEN /repos/<username>/<reponame>/commits | grep '"date":'
+
+- This script will list the commit dates of all of the commits in a specific repo for a user
